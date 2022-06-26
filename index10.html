@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<input id="length" placeholder="Enter The Value Of Length" type="number">
+<input id="redious" placeholder="Enter The Value Of Redious" type="number">
+<input id="base" placeholder="Enter The Of Value Base" type="number">
+<select id="area" name="Area's">
+    <option value="" disabled selected>Select Your Option</option>
+    <option value="circle">Circle</option>
+    <option value="tringle">Tringle</option>
+    <option value="square">Square</option>
+</select>
+<button onclick="abc()">Click</button>
+<div id="result"></div>
+<script>
+ var PI=3.142
+ var l=document.getElementById("length") 
+ var b=document.getElementById("base")
+ var r=document.getElementById("redious")
+    function abc(){
+    var x = document.getElementById("area").value
+    var PI=3.142
+    var l=document.getElementById("length").value
+    var b=document.getElementById("base").value
+    var r=document.getElementById("redious").value
+        if (x==""){
+                alert("Select Your Option")
+                return
+                }
+            if (x=="circle"){
+                var resultOfCircle=PI*r*2
+              
+                }
+            if (x=="tringle"){
+                var resultOfTringle=(l*b)/2
+                
+                }
+            if (x=="square"){
+                var resultOfSquare=(l*b)
+                
+                } 
+                document.getElementById("result").innerHTML="area of circle:"+resultOfCircle
+                document.getElementById("result").innerHTML="area of tringle:"+resultOfTringle
+                document.getElementById("result").innerHTML="area of square:"+resultOfSquare
+        }
+</script>
+
+</body>
+</html>
+
+		
